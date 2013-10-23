@@ -2,7 +2,7 @@ Un repositorio de dominio publico donde tener codigo para extraer datos desde el
 
 Inspirado en el trabajo que varias organizaciones estan haciendo en http://github.com/unitedstates/
 
-*Configuracion del ambiente*
+#Configuracion del ambiente
 
 En linux hay que instalar los siguientes paquetes
 
@@ -27,14 +27,14 @@ donde los scripts que tenemos hasta el momento son:
     * contactos-senadores
 
 
-*Extraccion de datos de Legisladores*
+#Extraccion de datos de Legisladores*
 
 
-*camara de senadores*
+###camara de senadores
 
 Extraemos la informacion desde la pagina http://www.parlamento.gub.uy/GxEmule/IntcpoGrafico.asp?Fecha=21102013&Cuerpo=S&Integracion=S&Desde=15021985&Hasta=21102013&Dummy=21102013&TipoLeg=Tit&Orden=Legislador&Grafico=s&Integracion=S&Ejecutar+Consulta=Ejecutar+Consulta
 
-*camara de representantes*
+###camara de representantes
 
 Extraemos la informacion desde la pagina http://www.parlamento.gub.uy/GxEmule/IntcpoGrafico.asp?Fecha=21102013&Cuerpo=D&Integracion=S&Desde=15021985&Hasta=21102013&Dummy=21102013&TipoLeg=Tit&Orden=Legislador&Grafico=s&Integracion=S&Ejecutar+Consulta=Ejecutar+Consulta
 
