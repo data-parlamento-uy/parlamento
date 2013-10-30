@@ -8,6 +8,7 @@ import json
 import logging
 
 base_url = "http://www.parlamento.gub.uy"
+cuerpo = 'S'
 
 def run(options):
     cache = utils.flags().get('cache', False)
@@ -15,9 +16,8 @@ def run(options):
     scrape(options)
 
 def scrape(options):
-    today = datetime.datetime.now().strftime('%d%m%Y')
-    fecha  = options.get('fecha', today)
-    cuerpo = 'S'
+    hoy = datetime.datetime.now().strftime('%d%m%Y')
+    fecha  = options.get('fecha', hoy)
     integracion = options.get('integracion', 'S')
     tipoleg = options.get('tipoleg', 'Tit')
     orden = options.get('orden', 'Legislador')
@@ -25,11 +25,11 @@ def scrape(options):
 
 
     query = "?Fecha=%s&Cuerpo=%s&Integracion=%s&TipoLeg=%s&Orden=%s&Grafico=%s" % (fecha,cuerpo,integracion,tipoleg,orden,grafico)
-    url_to_scrape = "http://www.parlamento.gub.uy/GxEmule/IntcpoGrafico.asp?%s" % query
+    url_to_scrape = "http://www.parlamento.gub.uy/GxEmule/IntcpoGrafico.asp%s" % query
 
     logging.info("Scrapeando informacion de senadores desde pagina del parlamento.\nURL: %s.\n" % url_to_scrape)
 
-    body = utils.download(url_to_scrape, 'legisladores/camara_%s_%s.html' % (cuerpo, today), options.get('force', False), options)
+    body = utils.download(url_to_scrape, 'legisladores/camara_%s_%s.html' % (cuerpo, hoy), options.get('force', False), options)
     doc = lxml.html.document_fromstring(body)
 
     tablas = doc.xpath("//table")
@@ -57,7 +57,7 @@ def scrape(options):
         senadores.append(congress_people)
 
     parlamento = {
-        "fecha": today,
+        "fecha": hoy,
         "senadores": senadores
     }
     output_path = "data/senadores.json"
