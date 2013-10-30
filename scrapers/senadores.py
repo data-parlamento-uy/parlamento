@@ -13,16 +13,16 @@ def run(options):
     scrape_senado(options)
 
 def scrape_senado(options):
-    today = datetime.datetime.now().strftime('%Y%m%d')
+    today = datetime.datetime.now().strftime('%d%m%Y')
     fecha  = options.get('fecha', today)
-    cuerpo = options.get('cuerpo', 'S')
+    cuerpo = 'S'
     integracion = options.get('integracion', 'S')
     tipoleg = options.get('tipoleg', 'Tit')
     orden = options.get('orden', 'Legislador')
     grafico = options.get('grafico', 's')
-    integracion = options.get('integracion', 'S')
 
     print "Scrapeando informacion de senadores desde pagina del parlamento..."
+    base_url = "http://www.parlamento.gub.uy"
     url = "http://www.parlamento.gub.uy/GxEmule/IntcpoGrafico.asp?Fecha=%s&Cuerpo=%s&Integracion=%s&TipoLeg=%s&Orden=%s&Grafico=%s" % (fecha,cuerpo,integracion,tipoleg,orden,grafico)
     body = utils.download(url, 'legisladores/camara_%s_%s.html' % (cuerpo, today), options.get('force', False), options)
     doc = lxml.html.document_fromstring(body)
@@ -31,24 +31,22 @@ def scrape_senado(options):
     congress_arr = []
     i = 1
     for row in rows:
-        print i
-        #image row.xpath('img/@src')[0]
-        if (i == 1 and cuerpo == 'S'):
+        if (i == 1):
             congress_people = {
-                'name': row.xpath('br/following-sibling::text()')[0],
-                'desc': row.xpath('br/following-sibling::text()')[2],
-                'party': row.xpath('br/following-sibling::text()')[3],
-                'email': row.xpath("a[starts-with(@href, 'mailto')]/@href")[0].split(':',1)[1]
+                'nombre': row.xpath('br/following-sibling::text()')[0],
+                'titulo': row.xpath('br/following-sibling::text()')[2].strip(),
+                'partido': row.xpath('br/following-sibling::text()')[3],
+                'email': row.xpath("a[starts-with(@href, 'mailto')]/@href")[0].split(':',1)[1],
+                'foto' : base_url+row.xpath('img/@src')[0]
             }
         else:
             congress_people = {
-              'name': row.xpath('br/following-sibling::text()')[0],
-              'party': row.xpath('br/following-sibling::text()')[1],
-              'email': row.xpath("a[starts-with(@href, 'mailto')]/@href")[0].split(':',1)[1]
+              'nombre': row.xpath('br/following-sibling::text()')[0],
+              'partido': row.xpath('br/following-sibling::text()')[1],
+              'email': row.xpath("a[starts-with(@href, 'mailto')]/@href")[0].split(':',1)[1],
+              'foto' : base_url+row.xpath('img/@src')[0]
             }
-            if (cuerpo == 'D'):
-                congress_people['zone'] = row.xpath('br/following-sibling::text()')[1]
         i+=1
         congress_arr.append(congress_people)
-    file = "data/camara_%s_legisladores.json" % cuerpo
+    file = "data/senadores.json"
     utils.write(json.dumps(congress_arr),file)
