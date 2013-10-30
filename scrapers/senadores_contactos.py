@@ -8,12 +8,9 @@ import re, lxml.html, lxml.etree, StringIO, datetime, json
 
 def run(options):
 #  today = datetime.now().date()
-
-  cache = utils.flags().get('cache', False)
-  force = not cache
-
-  scrape_senado(options)
-
+    cache = utils.flags().get('cache', False)
+    force = not cache
+    scrape_senado(options)
 
 def scrape_senado(options):
     today = datetime.datetime.now().strftime('%Y%m%d')
@@ -27,13 +24,14 @@ def scrape_senado(options):
 
     print "Scrapeando informacion de senadores desde pagina del parlamento..."
     url = "http://www.parlamento.gub.uy/GxEmule/IntcpoGrafico.asp?Fecha=%s&Cuerpo=%s&Integracion=%s&TipoLeg=%s&Orden=%s&Grafico=%s" % (fecha,cuerpo,integracion,tipoleg,orden,grafico)
-    body = utils.download(url, 'legisladores/senadores.html', options.get('force', False), options)
+    body = utils.download(url, 'legisladores/camara_%s_%s.html' % (cuerpo, today), options.get('force', False), options)
     doc = lxml.html.document_fromstring(body)
     tablas = doc.xpath("//table")
     rows = tablas[3].cssselect('tr td')
     congress_arr = []
     i = 1
     for row in rows:
+        print i
         #image row.xpath('img/@src')[0]
         if (i == 1 and cuerpo == 'S'):
             congress_people = {
@@ -52,6 +50,5 @@ def scrape_senado(options):
                 congress_people['zone'] = row.xpath('br/following-sibling::text()')[1]
         i+=1
         congress_arr.append(congress_people)
-    file = "data/%s_people" % cuerpo
-    #utils.write(json.dumps(congress_arr, ensure_ascii=False).encode('utf-8'),file)
-    
+    file = "data/camara_%s_legisladores.json" % cuerpo
+    utils.write(json.dumps(congress_arr),file)
