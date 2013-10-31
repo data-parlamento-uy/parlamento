@@ -47,7 +47,7 @@ def scrape(options):
         'partido'  : format_word(row.xpath('br/following-sibling::text()')[1]),
         'email': email,
         'foto' : base_url+row.xpath('img/@src')[0],
-        'departamento' : row.xpath('br/following-sibling::text()')[2]
+        'departamento' : format_word(row.xpath('br/following-sibling::text()')[2])
       }
       diputados.append(congress_people)
 
