@@ -51,14 +51,10 @@ def scrape(options):
       }
       diputados.append(congress_people)
 
-  parlamento = {
-    "fecha": hoy,
-    "diputados" : diputados
-  }
   output_path = "data/diputados.json"
 
   utils.write(
-    json.dumps(parlamento, sort_keys=True, indent=2, default=utils.format_datetime, encoding="utf-8"), 
+    json.dumps(diputados, sort_keys=True, indent=2, default=utils.format_datetime, encoding="utf-8"), 
     output_path
   )
 
