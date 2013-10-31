@@ -24,7 +24,8 @@ Para levantar los datos
 
 donde los scripts que tenemos hasta el momento son:
 
-    * contactos-senadores
+    * senadores
+    * diputados
 
 
 #Extraccion de datos de Legisladores*
@@ -53,3 +54,9 @@ Orden=Legislador
 Grafico=s
 Integracion=S
 Ejecutar+Consulta=Ejecutar+Consulta
+
+#Importar json en mongodb
+
+Si estas usando MongoDB para guardar los datos desde json (nosotros lo usamos en el API del parlamento), se puede importar:
+
+     mongoimport -d parlamento --collection senadores --type json --file data/senadores.json --jsonArray
