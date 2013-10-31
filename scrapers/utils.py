@@ -1,6 +1,4 @@
-# Helpful functions for finding data about members and committees
-
-CURRENT_CONGRESS = 113
+# Helpful functions for finding data about members and committees - Reused from UnitedStates repository.
 departamentos  = {}
 
 import urllib2
