@@ -7,6 +7,7 @@ import urllib2
 import re, lxml.html, lxml.etree, StringIO
 import datetime
 import json
+import logging
 
 base_url = "http://www.parlamento.gub.uy"
 
@@ -28,9 +29,11 @@ def scrape(options):
   hasta = options.get('hasta', hoy)
   
   query = '?Cuerpo=%s' % cuerpo
-  url = 'http://www.parlamento.gub.uy/GxEmule/intcomind.asp?Cuerpo=%s' % query
+  url = base_url + '/GxEmule/intcomind.asp' + query
   
-  #generamos la sesion
+  logging.info("Escrapeando informacion de comisiones desde la pagina del parlamento.\nURL: %s.\n" % url)
+
+  # generamos la sesion
   req_sess = urllib2.Request(url)
   response = urllib2.urlopen(req_sess)
   
@@ -54,12 +57,13 @@ def scrape(options):
   response = urllib2.urlopen(req)
   the_page = response.read()
   
-  # Guardo la pagina, este metodo habria que ponerlo en utils ya que hay muchos posts
+  # Guardo la pagina
   utils.write(the_page, 'cache/comisiones/comisiones.html')
   doc = lxml.html.document_fromstring(the_page)
 
-  # Scrapeamos las comisiones por fila para sacar headers
+  # Escrapeamos las comisiones por fila para sacar headers
   tabla = doc.xpath("//table")[4].xpath("tr")
+
   comisiones = []
   for row in tabla:
     if (row.getchildren()[0].tag == 'th'):
@@ -68,12 +72,13 @@ def scrape(options):
      # Nos quedamos con la primera parte del nombre separado por la coma
       name = row.text_content().strip().split(',', 1)[0]
       comision = {
-     	'name' : name,
-     	'type' : cat,
+     	'nombre' : name,
+     	'categoria' : cat,
      	'cuerpo' : cuerpo,
       }
       href = row.cssselect('a')[0].get('href')
-      comision = integracion(href, name, cuerpo, options)
+      # Buscamos tambien la integracion
+      comision['integracion'] = integracion(href, name, cuerpo, options)
       comisiones.append(comision)
 
   output_path = "data/comisiones.json"
@@ -83,8 +88,7 @@ def scrape(options):
   )
   
 def integracion(href_comp, name, cuerpo, options):
-  base_url = 'http://www.parlamento.gub.uy/GxEmule/'
-  url = base_url + href_comp
+  url = base_url + '/GxEmule/' + href_comp
 
   body = utils.download(url, 'comisiones/'+name+'.html', options.get('force', False), options)
   doc = lxml.html.document_fromstring(body)
@@ -104,12 +108,14 @@ def integracion(href_comp, name, cuerpo, options):
     	cat = 'miembros'
     	start = True
     elif div.text_content().strip() == u'Secretaría':
-    	#appendamos los miembros
+    	# agregamos los miembros
+	cat = 'miembros'
     	result[cat] = pre_res
     	pre_res = []
     	cat = 'secretaria'
     elif div.text_content().strip() == 'Reuniones':
-    	#appendamos la secretaria
+    	# agregamos la secretaria
+	cat = 'secretaria'
     	result[cat] = pre_res
     	cat = 'reuniones'
     	pre_res = []
@@ -118,7 +124,7 @@ def integracion(href_comp, name, cuerpo, options):
     	#store data
     	data = {
     		'text' : div.text_content().strip(),
-    		'type' : cat,
+    		'tipo' : cat,
     		'cuerpo' : cuerpo,
     	}
     	pre_res.append(data)
@@ -129,8 +135,7 @@ def integracion(href_comp, name, cuerpo, options):
     else:
     	email = 'none'
     data = {
-      		'text' : email,
-    		'type' : 'email',
+      		'correo' : email,
     		'cuerpo' : cuerpo,
     	}
     result['email'] = data
