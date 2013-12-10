@@ -1,0 +1,797 @@
+{
+  "ultima_actualizacion": "2013-12-9",
+  "diputados": [
+    {
+      "apellido": "abdala", 
+      "departamento": "montevideo", 
+      "email": "pabdala@parlamento.gub.uy", 
+      "foto": "http://www.parlamento.gub.uy/htmlstat/pl/legisl/fotos/Fot03062.jpg", 
+      "nombre": "pablo", 
+      "partido": "partido nacional"
+    }, 
+    {
+      "apellido": "alonso", 
+      "departamento": "montevideo", 
+      "email": "valonso@parlamento.gub.uy", 
+      "foto": "http://www.parlamento.gub.uy/htmlstat/pl/legisl/fotos/Fot09891.jpg", 
+      "nombre": "verónica", 
+      "partido": "partido nacional"
+    }, 
+    {
+      "apellido": "amado", 
+      "departamento": "montevideo", 
+      "email": "famado@parlamento.gub.uy", 
+      "foto": "http://www.parlamento.gub.uy/htmlstat/pl/legisl/fotos/Fot09892.jpg", 
+      "nombre": "fernando", 
+      "partido": "partido colorado"
+    }, 
+    {
+      "apellido": "amarilla", 
+      "departamento": "rivera", 
+      "email": "gamarilla@parlamento.gub.uy", 
+      "foto": "http://www.parlamento.gub.uy/htmlstat/pl/legisl/fotos/Fot03959.jpg", 
+      "nombre": "gerardo", 
+      "partido": "partido nacional"
+    }, 
+    {
+      "apellido": "amy", 
+      "departamento": "soriano", 
+      "email": "jamy@parlamento.gub.uy", 
+      "foto": "http://www.parlamento.gub.uy/htmlstat/pl/legisl/fotos/Fot09899.jpg", 
+      "nombre": "josé a.", 
+      "partido": "partido colorado"
+    }, 
+    {
+      "apellido": "arocena argul", 
+      "departamento": "florida", 
+      "email": "jarocena@parlamento.gub.uy", 
+      "foto": "http://www.parlamento.gub.uy/htmlstat/pl/legisl/fotos/Fot09953.jpg", 
+      "nombre": "josé andrés", 
+      "partido": "partido nacional"
+    }, 
+    {
+      "apellido": "arregui", 
+      "departamento": "soriano", 
+      "email": "rarregui@parlamento.gub.uy", 
+      "foto": "http://www.parlamento.gub.uy/htmlstat/pl/legisl/fotos/Fot02936.jpg", 
+      "nombre": "roque", 
+      "partido": "partido frente amplio"
+    }, 
+    {
+      "apellido": "asti", 
+      "departamento": "montevideo", 
+      "email": "aasti@parlamento.gub.uy", 
+      "foto": "http://www.parlamento.gub.uy/htmlstat/pl/legisl/fotos/Fot05851.jpg", 
+      "nombre": "alfredo", 
+      "partido": "partido frente amplio"
+    }, 
+    {
+      "apellido": "bango", 
+      "departamento": "montevideo", 
+      "email": "jbango@parlamento.gub.uy", 
+      "foto": "http://www.parlamento.gub.uy/htmlstat/pl/legisl/fotos/Fot08259.jpg", 
+      "nombre": "julio", 
+      "partido": "partido frente amplio"
+    }, 
+    {
+      "apellido": "battistoni", 
+      "departamento": "montevideo", 
+      "email": "jbattistoni@parlamento.gub.uy", 
+      "foto": "http://www.parlamento.gub.uy/htmlstat/pl/legisl/fotos/Fot07952.jpg", 
+      "nombre": "julio", 
+      "partido": "partido frente amplio"
+    }, 
+    {
+      "apellido": "bayardi", 
+      "departamento": "montevideo", 
+      "email": "jbayardi@parlamento.gub.uy", 
+      "foto": "http://www.parlamento.gub.uy/htmlstat/pl/legisl/fotos/Fot00466.jpg", 
+      "nombre": "josé", 
+      "partido": "partido frente amplio"
+    }, 
+    {
+      "apellido": "bernini", 
+      "departamento": "montevideo", 
+      "email": "gbernini@parlamento.gub.uy", 
+      "foto": "http://www.parlamento.gub.uy/htmlstat/pl/legisl/fotos/Fot07584.jpg", 
+      "nombre": "gustavo", 
+      "partido": "partido frente amplio"
+    }, 
+    {
+      "apellido": "berois quinteros", 
+      "departamento": "flores", 
+      "email": "rberois@parlamento.gub.uy", 
+      "foto": "http://www.parlamento.gub.uy/htmlstat/pl/legisl/fotos/Fot02669.jpg", 
+      "nombre": "ricardo", 
+      "partido": "partido nacional"
+    }, 
+    {
+      "apellido": "bianchi", 
+      "departamento": "colonia", 
+      "email": "dbianchi@parlamento.gub.uy", 
+      "foto": "http://www.parlamento.gub.uy/htmlstat/pl/legisl/fotos/Fot05131.jpg", 
+      "nombre": "daniel", 
+      "partido": "partido colorado"
+    }, 
+    {
+      "apellido": "bistolfi", 
+      "departamento": "salto", 
+      "email": "mbistolfi@parlamento.gub.uy", 
+      "foto": "http://www.parlamento.gub.uy/htmlstat/pl/legisl/fotos/Fot10156.jpg", 
+      "nombre": "marcelo", 
+      "partido": "partido colorado"
+    }, 
+    {
+      "apellido": "borsari brenna", 
+      "departamento": "montevideo", 
+      "email": "gborsari@parlamento.gub.uy", 
+      "foto": "http://www.parlamento.gub.uy/htmlstat/pl/legisl/fotos/Fot01155.jpg", 
+      "nombre": "gustavo", 
+      "partido": "partido nacional"
+    }, 
+    {
+      "apellido": "cáceres", 
+      "departamento": "rio negro", 
+      "email": "gcaceres@parlamento.gub.uy", 
+      "foto": "http://www.parlamento.gub.uy/htmlstat/pl/legisl/fotos/Fot09970.jpg", 
+      "nombre": "graciela", 
+      "partido": "partido frente amplio"
+    }, 
+    {
+      "apellido": "caggiani", 
+      "departamento": "montevideo", 
+      "email": "dcaggiani@parlamento.gub.uy", 
+      "foto": "http://www.parlamento.gub.uy/htmlstat/pl/legisl/fotos/Fot09916.jpg", 
+      "nombre": "daniel", 
+      "partido": "partido frente amplio"
+    }, 
+    {
+      "apellido": "cantero piali", 
+      "departamento": "montevideo", 
+      "email": "fcantero@parlamento.gub.uy", 
+      "foto": "http://www.parlamento.gub.uy/htmlstat/pl/legisl/fotos/Fot09645.jpg", 
+      "nombre": "fitzgerald", 
+      "partido": "partido colorado"
+    }, 
+    {
+      "apellido": "caram", 
+      "departamento": "artigas", 
+      "email": "rcaram@parlamento.gub.uy", 
+      "foto": "http://www.parlamento.gub.uy/htmlstat/pl/legisl/fotos/Fot07951.jpg", 
+      "nombre": "rodolfo", 
+      "partido": "partido nacional"
+    }, 
+    {
+      "apellido": "carballo da costa", 
+      "departamento": "montevideo", 
+      "email": "fcarballo@parlamento.gub.uy", 
+      "foto": "http://www.parlamento.gub.uy/htmlstat/pl/legisl/fotos/Fot07604.jpg", 
+      "nombre": "felipe", 
+      "partido": "partido frente amplio"
+    }, 
+    {
+      "apellido": "cardoso", 
+      "departamento": "maldonado", 
+      "email": "gcardoso@parlamento.gub.uy", 
+      "foto": "http://www.parlamento.gub.uy/htmlstat/pl/legisl/fotos/Fot05217.jpg", 
+      "nombre": "germán", 
+      "partido": "partido colorado"
+    }, 
+    {
+      "apellido": "cardoso", 
+      "departamento": "rocha", 
+      "email": "jcardoso_sec@parlamento.gub.uy", 
+      "foto": "http://www.parlamento.gub.uy/htmlstat/pl/legisl/fotos/Fot00598.jpg", 
+      "nombre": "josé carlos", 
+      "partido": "partido nacional"
+    }, 
+    {
+      "apellido": "casas", 
+      "departamento": "san jose", 
+      "email": "acasas@parlamento.gub.uy", 
+      "foto": "http://www.parlamento.gub.uy/htmlstat/pl/legisl/fotos/Fot05355.jpg", 
+      "nombre": "alberto", 
+      "partido": "partido nacional"
+    }, 
+    {
+      "apellido": "cersúsimo", 
+      "departamento": "san jose", 
+      "email": "gcersosimo@parlamento.gub.uy", 
+      "foto": "http://www.parlamento.gub.uy/htmlstat/pl/legisl/fotos/Fot00509.jpg", 
+      "nombre": "gustavo", 
+      "partido": "partido colorado"
+    }, 
+    {
+      "apellido": "chiesa bruno", 
+      "departamento": "tacuarembo", 
+      "email": "achiesa@parlamento.gub.uy", 
+      "foto": "http://www.parlamento.gub.uy/htmlstat/pl/legisl/fotos/Fot06427.jpg", 
+      "nombre": "antonio", 
+      "partido": "partido nacional"
+    }, 
+    {
+      "apellido": "dávila", 
+      "departamento": "artigas", 
+      "email": "hdavila@parlamento.gub.uy", 
+      "foto": "http://www.parlamento.gub.uy/htmlstat/pl/legisl/fotos/Fot07056.jpg", 
+      "nombre": "hugo", 
+      "partido": "partido frente amplio"
+    }, 
+    {
+      "apellido": "de león", 
+      "departamento": "san jose", 
+      "email": "wdeleon@parlamento.gub.uy", 
+      "foto": "http://www.parlamento.gub.uy/htmlstat/pl/legisl/fotos/Fot03407.jpg", 
+      "nombre": "walter", 
+      "partido": "partido frente amplio"
+    }, 
+    {
+      "apellido": "delgado", 
+      "departamento": "montevideo", 
+      "email": "adelgado@parlamento.gub.uy", 
+      "foto": "http://www.parlamento.gub.uy/htmlstat/pl/legisl/fotos/Fot03948.jpg", 
+      "nombre": "alvaro", 
+      "partido": "partido nacional"
+    }, 
+    {
+      "apellido": "espinosa", 
+      "departamento": "canelones", 
+      "email": "gespinosa@parlamento.gub.uy", 
+      "foto": "http://www.parlamento.gub.uy/htmlstat/pl/legisl/fotos/Fot07733.jpg", 
+      "nombre": "gustavo a.", 
+      "partido": "partido colorado"
+    }, 
+    {
+      "apellido": "facello", 
+      "departamento": "montevideo", 
+      "email": "gfacello@parlamento.gub.uy", 
+      "foto": "http://www.parlamento.gub.uy/htmlstat/pl/legisl/fotos/Fot09927.jpg", 
+      "nombre": "guillermo", 
+      "partido": "partido colorado"
+    }, 
+    {
+      "apellido": "gamou", 
+      "departamento": "montevideo", 
+      "email": "cgamou@parlamento.gub.uy", 
+      "foto": "http://www.parlamento.gub.uy/htmlstat/pl/legisl/fotos/Fot02907.jpg", 
+      "nombre": "carlos", 
+      "partido": "partido frente amplio"
+    }, 
+    {
+      "apellido": "gandini", 
+      "departamento": "montevideo", 
+      "email": "jgandini@parlamento.gub.uy", 
+      "foto": "http://www.parlamento.gub.uy/htmlstat/pl/legisl/fotos/Fot00260.jpg", 
+      "nombre": "jorge", 
+      "partido": "partido nacional"
+    }, 
+    {
+      "apellido": "garcía", 
+      "departamento": "montevideo", 
+      "email": "jgarcia@parlamento.gub.uy", 
+      "foto": "http://www.parlamento.gub.uy/htmlstat/pl/legisl/fotos/Fot02965.jpg", 
+      "nombre": "javier", 
+      "partido": "partido nacional"
+    }, 
+    {
+      "apellido": "garcía", 
+      "departamento": "lavalleja", 
+      "email": "mlgarcia@parlamento.gub.uy", 
+      "foto": "http://www.parlamento.gub.uy/htmlstat/pl/legisl/fotos/Fot10117.jpg", 
+      "nombre": "mario", 
+      "partido": "partido nacional"
+    }, 
+    {
+      "apellido": "garino gruss", 
+      "departamento": "montevideo", 
+      "email": "jgarino@parlamento.gub.uy", 
+      "foto": "http://www.parlamento.gub.uy/htmlstat/pl/legisl/fotos/Fot09926.jpg", 
+      "nombre": "juan manuel", 
+      "partido": "partido colorado"
+    }, 
+    {
+      "apellido": "gloodtdofsky", 
+      "departamento": "montevideo", 
+      "email": "agloodtdofsky@parlamento.gub.uy", 
+      "foto": "http://www.parlamento.gub.uy/htmlstat/pl/legisl/fotos/Fot04392.jpg", 
+      "nombre": "aníßbal", 
+      "partido": "partido colorado"
+    }, 
+    {
+      "apellido": "goñi romero", 
+      "departamento": "salto", 
+      "email": "rgoni@parlamento.gub.uy", 
+      "foto": "http://www.parlamento.gub.uy/htmlstat/pl/legisl/fotos/Fot07758.jpg", 
+      "nombre": "rodrigo", 
+      "partido": "partido nacional"
+    }, 
+    {
+      "apellido": "groba arriondo", 
+      "departamento": "montevideo", 
+      "email": "ogroba@parlamento.gub.uy", 
+      "foto": "http://www.parlamento.gub.uy/htmlstat/pl/legisl/fotos/Fot08185.jpg", 
+      "nombre": "oscar", 
+      "partido": "partido frente amplio"
+    }, 
+    {
+      "apellido": "ibarra", 
+      "departamento": "montevideo", 
+      "email": "dibarra@parlamento.gub.uy", 
+      "foto": "http://www.parlamento.gub.uy/htmlstat/pl/legisl/fotos/Fot00417.jpg", 
+      "nombre": "doreen javier", 
+      "partido": "partido frente amplio"
+    }, 
+    {
+      "apellido": "iturralde viñas", 
+      "departamento": "montevideo", 
+      "email": "piturralde@parlamento.gub.uy", 
+      "foto": "http://www.parlamento.gub.uy/htmlstat/pl/legisl/fotos/Fot02873.jpg", 
+      "nombre": "pablo", 
+      "partido": "partido nacional"
+    }, 
+    {
+      "apellido": "lacalle pou", 
+      "departamento": "canelones", 
+      "email": "llacalle@parlamento.gub.uy", 
+      "foto": "http://www.parlamento.gub.uy/htmlstat/pl/legisl/fotos/Fot05167.jpg", 
+      "nombre": "luis alberto", 
+      "partido": "partido nacional"
+    }, 
+    {
+      "apellido": "laurnaga", 
+      "departamento": "montevideo", 
+      "email": "mlaurnaga@parlamento.gub.uy", 
+      "foto": "http://www.parlamento.gub.uy/htmlstat/pl/legisl/fotos/Fot09282.jpg", 
+      "nombre": "maría elena", 
+      "partido": "partido frente amplio"
+    }, 
+    {
+      "apellido": "lima", 
+      "departamento": "salto", 
+      "email": "alima@parlamento.gub.uy", 
+      "foto": "http://www.parlamento.gub.uy/htmlstat/pl/legisl/fotos/Fot09898.jpg", 
+      "nombre": "andrés", 
+      "partido": "partido frente amplio"
+    }, 
+    {
+      "apellido": "mahúa", 
+      "departamento": "canelones", 
+      "email": "jmahia@parlamento.gub.uy", 
+      "foto": "http://www.parlamento.gub.uy/htmlstat/pl/legisl/fotos/Fot02921.jpg", 
+      "nombre": "josé carlos", 
+      "partido": "partido frente amplio"
+    }, 
+    {
+      "apellido": "mallo", 
+      "departamento": "montevideo", 
+      "email": "amallo@parlamento.gub.uy", 
+      "foto": "http://www.parlamento.gub.uy/htmlstat/pl/legisl/fotos/Fot09893.jpg", 
+      "nombre": "alma", 
+      "partido": "partido colorado"
+    }, 
+    {
+      "apellido": "mañana", 
+      "departamento": "rio negro", 
+      "email": "dmaniana@parlamento.gub.uy", 
+      "foto": "http://www.parlamento.gub.uy/htmlstat/pl/legisl/fotos/Fot07870.jpg", 
+      "nombre": "daniel", 
+      "partido": "partido nacional"
+    }, 
+    {
+      "apellido": "martíßnez huelmo", 
+      "departamento": "montevideo", 
+      "email": "rmartinez@parlamento.gub.uy", 
+      "foto": "http://www.parlamento.gub.uy/htmlstat/pl/legisl/fotos/Fot00408.jpg", 
+      "nombre": "rubén", 
+      "partido": "partido frente amplio"
+    }, 
+    {
+      "apellido": "matiauda", 
+      "departamento": "canelones", 
+      "email": "gmatiaude@parlamento.gub.uy", 
+      "foto": "http://www.parlamento.gub.uy/htmlstat/pl/legisl/fotos/Fot09897.jpg", 
+      "nombre": "graciela", 
+      "partido": "partido colorado"
+    }, 
+    {
+      "apellido": "michelini", 
+      "departamento": "montevideo", 
+      "email": "fmichelini@parlamento.gub.uy", 
+      "foto": "http://www.parlamento.gub.uy/htmlstat/pl/legisl/fotos/Fot02914.jpg", 
+      "nombre": "felipe", 
+      "partido": "partido frente amplio"
+    }, 
+    {
+      "apellido": "minetti", 
+      "departamento": "canelones", 
+      "email": "ominetti@parlamento.gub.uy", 
+      "foto": "http://www.parlamento.gub.uy/htmlstat/pl/legisl/fotos/Fot06806.jpg", 
+      "nombre": "orquíßdea", 
+      "partido": "partido frente amplio"
+    }, 
+    {
+      "apellido": "montaner", 
+      "departamento": "tacuarembo", 
+      "email": "mmontaner@parlamento.gub.uy", 
+      "foto": "http://www.parlamento.gub.uy/htmlstat/pl/legisl/fotos/Fot02945.jpg", 
+      "nombre": "martha", 
+      "partido": "partido colorado"
+    }, 
+    {
+      "apellido": "mujica", 
+      "departamento": "montevideo", 
+      "email": "gmujica@parlamento.gub.uy", 
+      "foto": "http://www.parlamento.gub.uy/htmlstat/pl/legisl/fotos/Fot07751.jpg", 
+      "nombre": "gonzalo", 
+      "partido": "partido frente amplio"
+    }, 
+    {
+      "apellido": "niffouri blanco", 
+      "departamento": "canelones", 
+      "email": "aniffouri@parlamento.gub.uy", 
+      "foto": "http://www.parlamento.gub.uy/htmlstat/pl/legisl/fotos/Fot09896.jpg", 
+      "nombre": "amún", 
+      "partido": "partido nacional"
+    }, 
+    {
+      "apellido": "novales", 
+      "departamento": "soriano", 
+      "email": "gnovales@parlamento.gub.uy", 
+      "foto": "http://www.parlamento.gub.uy/htmlstat/pl/legisl/fotos/Fot07744.jpg", 
+      "nombre": "gonzalo", 
+      "partido": "partido nacional"
+    }, 
+    {
+      "apellido": "olivera", 
+      "departamento": "canelones", 
+      "email": "rolivera@parlamento.gub.uy", 
+      "foto": "http://www.parlamento.gub.uy/htmlstat/pl/legisl/fotos/Fot09932.jpg", 
+      "nombre": "raúl", 
+      "partido": "partido frente amplio"
+    }, 
+    {
+      "apellido": "orrico", 
+      "departamento": "montevideo", 
+      "email": "jorrico@parlamento.gub.uy", 
+      "foto": "http://www.parlamento.gub.uy/htmlstat/pl/legisl/fotos/Fot02905.jpg", 
+      "nombre": "jorge", 
+      "partido": "partido frente amplio"
+    }, 
+    {
+      "apellido": "otegui griego", 
+      "departamento": "paysandu", 
+      "email": "motegui@parlamento.gub.uy", 
+      "foto": "http://www.parlamento.gub.uy/htmlstat/pl/legisl/fotos/Fot08407.jpg", 
+      "nombre": "miguel", 
+      "partido": "partido nacional"
+    }, 
+    {
+      "apellido": "pardiñßas", 
+      "departamento": "cerro largo", 
+      "email": "ypardinas@parlamento.gub.uy", 
+      "foto": "http://www.parlamento.gub.uy/htmlstat/pl/legisl/fotos/Fot09038.jpg", 
+      "nombre": "yeru", 
+      "partido": "partido frente amplio"
+    }, 
+    {
+      "apellido": "passada", 
+      "departamento": "montevideo", 
+      "email": "ipassada@parlamento.gub.uy", 
+      "foto": "http://www.parlamento.gub.uy/htmlstat/pl/legisl/fotos/Fot07769.jpg", 
+      "nombre": "ivonne", 
+      "partido": "partido frente amplio"
+    }, 
+    {
+      "apellido": "paysse", 
+      "departamento": "montevideo", 
+      "email": "dpaysse@parlamento.gub.uy", 
+      "foto": "http://www.parlamento.gub.uy/htmlstat/pl/legisl/fotos/Fot05262.jpg", 
+      "nombre": "daniela", 
+      "partido": "partido frente amplio"
+    }, 
+    {
+      "apellido": "pedreira", 
+      "departamento": "flores", 
+      "email": "gpedreira@parlamento.gub.uy", 
+      "foto": "http://www.parlamento.gub.uy/htmlstat/pl/legisl/fotos/Fot09971.jpg", 
+      "nombre": "guzmán", 
+      "partido": "partido frente amplio"
+    }, 
+    {
+      "apellido": "peña fernández", 
+      "departamento": "canelones", 
+      "email": "dpena@parlamento.gub.uy", 
+      "foto": "http://www.parlamento.gub.uy/htmlstat/pl/legisl/fotos/Fot05165.jpg", 
+      "nombre": "daniel", 
+      "partido": "partido nacional"
+    }, 
+    {
+      "apellido": "perdomo gamarra", 
+      "departamento": "canelones", 
+      "email": "aperdomo@parlamento.gub.uy", 
+      "foto": "http://www.parlamento.gub.uy/htmlstat/pl/legisl/fotos/Fot05166.jpg", 
+      "nombre": "alberto", 
+      "partido": "partido nacional"
+    }, 
+    {
+      "apellido": "pereira", 
+      "departamento": "canelones", 
+      "email": "jsouza@parlamento.gub.uy", 
+      "foto": "http://www.parlamento.gub.uy/htmlstat/pl/legisl/fotos/Fot09977.jpg", 
+      "nombre": "nicolás", 
+      "partido": "partido frente amplio"
+    }, 
+    {
+      "apellido": "pereyra", 
+      "departamento": "rocha", 
+      "email": "apereyra@parlamento.gub.uy", 
+      "foto": "http://www.parlamento.gub.uy/htmlstat/pl/legisl/fotos/Fot07742.jpg", 
+      "nombre": "aníbal", 
+      "partido": "partido frente amplio"
+    }, 
+    {
+      "apellido": "pereyra", 
+      "departamento": "montevideo", 
+      "email": "spereyra@parlamento.gub.uy", 
+      "foto": "http://www.parlamento.gub.uy/htmlstat/pl/legisl/fotos/Fot09674.jpg", 
+      "nombre": "susana", 
+      "partido": "partido frente amplio"
+    }, 
+    {
+      "apellido": "pérez brito", 
+      "departamento": "maldonado", 
+      "email": "dperez@parlamento.gub.uy", 
+      "foto": "http://www.parlamento.gub.uy/htmlstat/pl/legisl/fotos/Fot02924.jpg", 
+      "nombre": "darío", 
+      "partido": "partido frente amplio"
+    }, 
+    {
+      "apellido": "pérez gonzález", 
+      "departamento": "maldonado", 
+      "email": "pperez@parlamento.gub.uy", 
+      "foto": "http://www.parlamento.gub.uy/htmlstat/pl/legisl/fotos/Fot07851.jpg", 
+      "nombre": "pablo", 
+      "partido": "partido frente amplio"
+    }, 
+    {
+      "apellido": "perrachón", 
+      "departamento": "colonia", 
+      "email": "mperrachon@parlamento.gub.uy", 
+      "foto": "http://www.parlamento.gub.uy/htmlstat/pl/legisl/fotos/Fot07856.jpg", 
+      "nombre": "mario", 
+      "partido": "partido frente amplio"
+    }, 
+    {
+      "apellido": "piñeyrúa olmos", 
+      "departamento": "montevideo", 
+      "email": "apineyrua@parlamento.gub.uy", 
+      "foto": "http://www.parlamento.gub.uy/htmlstat/pl/legisl/fotos/Fot00467.jpg", 
+      "nombre": "anaßlía", 
+      "partido": "partido nacional"
+    }, 
+    {
+      "apellido": "planchón", 
+      "departamento": "colonia", 
+      "email": "rplanchon@parlamento.gub.uy", 
+      "foto": "http://www.parlamento.gub.uy/htmlstat/pl/legisl/fotos/Fot09975.jpg", 
+      "nombre": "ricardo", 
+      "partido": "partido nacional"
+    }, 
+    {
+      "apellido": "posada", 
+      "departamento": "montevideo", 
+      "email": "iposada@parlamento.gub.uy", 
+      "foto": "http://www.parlamento.gub.uy/htmlstat/pl/legisl/fotos/Fot02912.jpg", 
+      "nombre": "iván", 
+      "partido": "partido independiente"
+    }, 
+    {
+      "apellido": "pozzi", 
+      "departamento": "montevideo", 
+      "email": "jpozzi@parlamento.gub.uy", 
+      "foto": "http://www.parlamento.gub.uy/htmlstat/pl/legisl/fotos/Fot07755.jpg", 
+      "nombre": "jorge", 
+      "partido": "partido frente amplio"
+    }, 
+    {
+      "apellido": "puig", 
+      "departamento": "montevideo", 
+      "email": "lpuig@parlamento.gub.uy", 
+      "foto": "http://www.parlamento.gub.uy/htmlstat/pl/legisl/fotos/Fot09889.jpg", 
+      "nombre": "luis", 
+      "partido": "partido frente amplio"
+    }, 
+    {
+      "apellido": "radío", 
+      "departamento": "canelones", 
+      "email": "dradio@parlamento.gub.uy", 
+      "foto": "http://www.parlamento.gub.uy/htmlstat/pl/legisl/fotos/Fot09972.jpg", 
+      "nombre": "daniel", 
+      "partido": "partido independiente"
+    }, 
+    {
+      "apellido": "rodríguez galvez", 
+      "departamento": "florida", 
+      "email": "crodriguezgalvez@parlamento.gub.uy", 
+      "foto": "http://www.parlamento.gub.uy/htmlstat/pl/legisl/fotos/Fot10032.jpg", 
+      "nombre": "carlos", 
+      "partido": "partido frente amplio"
+    }, 
+    {
+      "apellido": "rodríguez servetto", 
+      "departamento": "maldonado", 
+      "email": "nrodriguez@diputados.gub.uy", 
+      "foto": "http://www.parlamento.gub.uy/htmlstat/pl/legisl/fotos/Fot02735.jpg", 
+      "nombre": "nelson", 
+      "partido": "partido nacional"
+    }, 
+    {
+      "apellido": "rodríguez", 
+      "departamento": "tacuarembo", 
+      "email": "erodriguez@parlamento.gub.uy", 
+      "foto": "http://www.parlamento.gub.uy/htmlstat/pl/legisl/fotos/Fot07759.jpg", 
+      "nombre": "edgardo", 
+      "partido": "partido frente amplio"
+    }, 
+    {
+      "apellido": "rombys", 
+      "departamento": "paysandu", 
+      "email": "grombys@parlamento.gub.uy", 
+      "foto": "http://www.parlamento.gub.uy/htmlstat/pl/legisl/fotos/Fot07842.jpg", 
+      "nombre": "gustavo", 
+      "partido": "partido frente amplio"
+    }, 
+    {
+      "apellido": "sabini", 
+      "departamento": "canelones", 
+      "email": "ssabini@parlamento.gub.uy", 
+      "foto": "http://www.parlamento.gub.uy/htmlstat/pl/legisl/fotos/Fot09894.jpg", 
+      "nombre": "sebastián", 
+      "partido": "partido frente amplio"
+    }, 
+    {
+      "apellido": "sander", 
+      "departamento": "rivera", 
+      "email": "rsander@parlamento.gub.uy", 
+      "foto": "http://www.parlamento.gub.uy/htmlstat/pl/legisl/fotos/Fot10031.jpg", 
+      "nombre": "richard", 
+      "partido": "partido colorado"
+    }, 
+    {
+      "apellido": "sanseverino", 
+      "departamento": "montevideo", 
+      "email": "bsanseverino@parlamento.gub.uy", 
+      "foto": "http://www.parlamento.gub.uy/htmlstat/pl/legisl/fotos/Fot08461.jpg", 
+      "nombre": "berta", 
+      "partido": "partido frente amplio"
+    }, 
+    {
+      "apellido": "saravia", 
+      "departamento": "cerro largo", 
+      "email": "psaravia@parlamento.gub.uy", 
+      "foto": "http://www.parlamento.gub.uy/htmlstat/pl/legisl/fotos/Fot00889.jpg", 
+      "nombre": "pedro", 
+      "partido": "partido nacional"
+    }, 
+    {
+      "apellido": "semproni", 
+      "departamento": "canelones", 
+      "email": "vsemproni@parlamento.gub.uy", 
+      "foto": "http://www.parlamento.gub.uy/htmlstat/pl/legisl/fotos/Fot02882.jpg", 
+      "nombre": "víctor", 
+      "partido": "partido frente amplio"
+    }, 
+    {
+      "apellido": "silva", 
+      "departamento": "rivera", 
+      "email": "", 
+      "foto": "http://www.parlamento.gub.uy/htmlstat/pl/legisl/fotos/Fot08307.jpg", 
+      "nombre": "rubenson", 
+      "partido": "partido frente amplio"
+    }, 
+    {
+      "apellido": "silvera araúo", 
+      "departamento": "treinta y tres", 
+      "email": "msilvera@parlamento.gub.uy", 
+      "foto": "http://www.parlamento.gub.uy/htmlstat/pl/legisl/fotos/Fot09956.jpg", 
+      "nombre": "mario", 
+      "partido": "partido nacional"
+    }, 
+    {
+      "apellido": "tajam", 
+      "departamento": "montevideo", 
+      "email": "htajam@parlamento.gub.uy", 
+      "foto": "http://www.parlamento.gub.uy/htmlstat/pl/legisl/fotos/Fot07752.jpg", 
+      "nombre": "héctor", 
+      "partido": "partido frente amplio"
+    }, 
+    {
+      "apellido": "tierno", 
+      "departamento": "durazno", 
+      "email": "mtierno@parlamento.gub.uy", 
+      "foto": "http://www.parlamento.gub.uy/htmlstat/pl/legisl/fotos/Fot09902.jpg", 
+      "nombre": "martín", 
+      "partido": "partido frente amplio"
+    }, 
+    {
+      "apellido": "toledo antúnez", 
+      "departamento": "treinta y tres", 
+      "email": "htoledo@parlamento.gub.uy", 
+      "foto": "http://www.parlamento.gub.uy/htmlstat/pl/legisl/fotos/Fot07746.jpg", 
+      "nombre": "hermes", 
+      "partido": "partido frente amplio"
+    }, 
+    {
+      "apellido": "tourné", 
+      "departamento": "montevideo", 
+      "email": "dtourne@parlamento.gub.uy", 
+      "foto": "http://www.parlamento.gub.uy/htmlstat/pl/legisl/fotos/Fot00898.jpg", 
+      "nombre": "daisy", 
+      "partido": "partido frente amplio"
+    }, 
+    {
+      "apellido": "trobo", 
+      "departamento": "montevideo", 
+      "email": "jtrobo@parlamento.gub.uy", 
+      "foto": "http://www.parlamento.gub.uy/htmlstat/pl/legisl/fotos/Fot00405.jpg", 
+      "nombre": "jaime mario", 
+      "partido": "partido nacional"
+    }, 
+    {
+      "apellido": "umpiérrez", 
+      "departamento": "lavalleja", 
+      "email": "", 
+      "foto": "http://www.parlamento.gub.uy/htmlstat/pl/legisl/fotos/Fot10034.jpg", 
+      "nombre": "javier", 
+      "partido": "partido frente amplio"
+    }, 
+    {
+      "apellido": "varela nestier", 
+      "departamento": "montevideo", 
+      "email": "cvarela@parlamento.gub.uy", 
+      "foto": "http://www.parlamento.gub.uy/htmlstat/pl/legisl/fotos/Fot07754.jpg", 
+      "nombre": "carlos", 
+      "partido": "partido frente amplio"
+    }, 
+    {
+      "apellido": "vázquez", 
+      "departamento": "montevideo", 
+      "email": "jvazquez@parlamento.gub.uy", 
+      "foto": "http://www.parlamento.gub.uy/htmlstat/pl/legisl/fotos/Fot03352.jpg", 
+      "nombre": "juan angel", 
+      "partido": "partido colorado"
+    }, 
+    {
+      "apellido": "verri", 
+      "departamento": "paysandu", 
+      "email": "wverri@parlamento.gub.uy", 
+      "foto": "http://www.parlamento.gub.uy/htmlstat/pl/legisl/fotos/Fot09973.jpg", 
+      "nombre": "walter", 
+      "partido": "partido colorado"
+    }, 
+    {
+      "apellido": "vidalín", 
+      "departamento": "durazno", 
+      "email": "cvidalin@parlamento.gub.uy", 
+      "foto": "http://www.parlamento.gub.uy/htmlstat/pl/legisl/fotos/Fot05193.jpg", 
+      "nombre": "carmelo", 
+      "partido": "partido nacional"
+    }, 
+    {
+      "apellido": "vivián", 
+      "departamento": "canelones", 
+      "email": "dvivian@parlamento.gub.uy", 
+      "foto": "http://www.parlamento.gub.uy/htmlstat/pl/legisl/fotos/Fot09895.jpg", 
+      "nombre": "dionisio", 
+      "partido": "partido frente amplio"
+    }, 
+    {
+      "apellido": "yanes", 
+      "departamento": "canelones", 
+      "email": "hyanes@parlamento.gub.uy", 
+      "foto": "http://www.parlamento.gub.uy/htmlstat/pl/legisl/fotos/Fot03112.jpg", 
+      "nombre": "horacio", 
+      "partido": "partido frente amplio"
+    }
+  ]
+}
