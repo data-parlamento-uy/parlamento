@@ -1,4 +1,4 @@
-Un repositorio de dominio publico donde tener codigo para extraer datos desde el sitio web del parlamento uruguayo.
+Un repositorio de dominio publico donde tener codigo para extraer datos desde el sitio web del parlamento uruguayo. Datos que no cambian frecuentemente (como legisladores) estan en la carpeta datos del repositorio.
 
 Inspirado en el trabajo que varias organizaciones estan haciendo en http://github.com/unitedstates/
 
