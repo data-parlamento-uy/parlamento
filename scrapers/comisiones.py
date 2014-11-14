@@ -77,66 +77,50 @@ def scrape(options):
      	'cuerpo' : cuerpo,
       }
       href = row.cssselect('a')[0].get('href')
-      # Buscamos tambien la integracion
-      comision['integracion'] = integracion(href, name, cuerpo, options)
+      # Buscamos tambien la integracion, email e informacion de reuniones
+      agregar_informacion_extra(href, name, cuerpo, comision, options)
       comisiones.append(comision)
 
-  output_path = "data/comisiones.json"
+  output_path = "data/comisiones_%s.json" % cuerpo
   utils.write(
     json.dumps(comisiones, sort_keys=True, indent=1, default=utils.format_datetime ,encoding='utf-8'), 
     output_path
   )
   
-def integracion(href_comp, name, cuerpo, options):
+def agregar_informacion_extra(href_comp, name, cuerpo, comision_data, options):
+  print name
   url = base_url + '/GxEmule/' + href_comp
 
   body = utils.download(url, 'comisiones/'+name+'.html', options.get('force', False), options)
   doc = lxml.html.document_fromstring(body)
   rows = doc.xpath("//div[contains(@style,'border:0px solid #006699')]/div")[0].xpath("//div[contains(@style,'width:750px')]/div")
-  divs = rows[0].cssselect('div')
 
-  result = {}
-  pre_res = []
-  lineas = 1
-  top = 0
-  start = False
+  divs = rows[0].xpath('div')
+  categoria = ''
+  comision_data['miembros'] = []
+  comision_data['secretaria'] = []
+
   for div in divs:
-    if (lineas == top):
-    	result[cat] = pre_res
-    	break
-    elif div.text_content().strip() == 'Miembros':
-    	cat = 'miembros'
-    	start = True
-    elif div.text_content().strip() == u'Secretaría':
-    	# agregamos los miembros
-	cat = 'miembros'
-    	result[cat] = pre_res
-    	pre_res = []
-    	cat = 'secretaria'
-    elif div.text_content().strip() == 'Reuniones':
-    	# agregamos la secretaria
-	cat = 'secretaria'
-    	result[cat] = pre_res
-    	cat = 'reuniones'
-    	pre_res = []
-    	top = lineas + 2
-    elif start:
-    	#store data
-    	data = {
-    		'text' : div.text_content().strip(),
-    		'tipo' : cat,
-    		'cuerpo' : cuerpo,
-    	}
-    	pre_res.append(data)
-    lineas += 1		
-    email_exists = doc.xpath("//a[starts-with(@href, 'mailto')]/@href")
-    if email_exists:
-    	email = email_exists[0].split(':',1)[1]
-    else:
-    	email = 'none'
-    data = {
-      		'correo' : email,
-    		'cuerpo' : cuerpo,
-    	}
-    result['email'] = data
-  return result
+    text = div.text_content().strip()
+    if len(text) > 1:
+      if re.match('Usuario:', text):
+        break
+      if text == 'Miembros':
+        categoria = 'miembros'
+      elif re.match('Secretar', text):
+        categoria = 'secretaria'
+      elif text == 'Reuniones':
+        categoria = 'reuniones'
+      elif re.match('Correo Elect', text):
+        categoria = 'email'
+      else:
+        if categoria == 'miembros':
+          comision_data['miembros'].append(text)
+        elif categoria == 'secretaria':
+          comision_data['secretaria'].append(text)
+        elif categoria == 'reuniones':
+          comision_data['reuniones'] = text
+        elif categoria == 'email':
+          comision_data['email'] = text
+          break
+
