@@ -21,15 +21,15 @@ Para levantar los datos
 
   ./run <nombre-del-script> [--force] [otras opciones]
 
-
-donde los scripts que tenemos hasta el momento son:
-
-    * senadores
-    * diputados
+scripts existentes:
+- senadores
+- diputados
+- comisiones
+- asistencias
+- asistencias_detalles
 
 
 #Extraccion de datos de Legisladores*
-
 
 ###camara de senadores
 
